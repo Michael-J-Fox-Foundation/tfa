@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Event</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Events</value>
+    </caseValues>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number In Party --></label>
+        <name>Number_In_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Checked In --></label>
+        <name>Total_Checked_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Registered --></label>
+        <name>Total_Registered__c</name>
+    </fields>
+    <fields>
+        <label><!-- When --></label>
+        <name>When__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- Check In --></label>
+        <name>Check_IN</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Follow up next week --></label>
+        <name>Follow_up_next_week</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- I Look Like (pic) --></label>
+        <name>I_Look_Like_pic</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Pic of Transcripts --></label>
+        <name>Pic_of_Transcripts</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Record Voice Note --></label>
+        <name>Transcribe_Voice_Note</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- follow up tomorrow --></label>
+        <name>follow_up_tomorrow</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,43 @@
+<apex:page controller="EventsCustomController">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" />
+
+<!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css" />
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <style>
+
+    </style>
+        
+    
+    
+<apex:image url="{!$Resource.headerevents}" width="320" height="200"/>
+ <div class="container">  
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Event</th>
+                  <th>Reg</th>
+                  <th>Checked In</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <apex:repeat value="{!allEvents}" var="evt">
+                     <tr>
+                      <td><a href="{!URLFOR($Action.Event__c.View, evt.id)}">{!evt.name}</a></td>
+                      <td><span class="badge">{!evt.Total_Registered__c}</span></td>
+                      <td><span class="badge">{!evt.Total_Checked_In__c}</span></td>
+                      
+                      </tr>
+                  </apex:repeat>
+              </tbody>
+            </table>
+          </div>
+       
+   </div>
+</apex:page>
